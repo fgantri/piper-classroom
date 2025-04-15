@@ -1,13 +1,14 @@
 import { Routes, Route } from "react-router-dom";
-
-function Home() {
-  return <h1>Hello App!</h1>;
-}
+import Classroom from "./pages/Classroom";
+import Class from "./pages/Class";
+import NewClass from "./pages/NewClass";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/classroom" element={<Classroom />} />
+      <Route path="/classroom/:id" element={<Class />} />
+      <Route path="/classroom/new" element={<NewClass />} />
     </Routes>
   );
 }

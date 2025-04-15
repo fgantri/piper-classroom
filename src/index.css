@@ -1,11 +1,9 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
-
-* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -60,4 +58,8 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
 }
